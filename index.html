@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sonu's Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/bc3a4b35ca.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div id="header">
+    <div class="container">
+      <nav>
+        <img src="images/Designer.png" class="logo">
+        <i class="fa-solid fa-bars" id="menu-btn"></i>
+        <ul id="sidemenu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="portfolio#">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="fa-regular fa-circle-xmark" onclick="closemenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+      </nav>
+      <div class="header_text">
+        <p>Web Devloper</p>
+        <h1>Hi,I'm Sonu</h1>
+        <div> And I am a Full Stack Developer.</div>
+        <span id="element"></span>
+        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+        <script>
+          var typed = new Typed('#element', {
+            strings: ['Web Devloper', 'Video Editor', 'Content Creator'],
+            typeSpeed: 50,
+          });
+        </script>
+      </div>
+    </div>
+    <div id="about">
+        <div class="container">
+          <div class="row">
+            <div class="about-col-1">
+              <img src="images/new1.jpg">
+            </div>
+            <div class="about-col-2">
+              <h1>About Me</h1>
+              <p>My name is Sonu Rai, and I am presently enrolled at Parul University to pursue a Bachelor of Technology (B.Tech) in Computer
+                Science and Engineering (CSE). I have a good background in data structures, software development, and programming, and I have a
+                strong love for technology and innovation. I have obtained practical experience in a range of web development and database
+                management projects over my academic career. I know how to use languages like Python, Java, and C++. In order to properly
+                contribute to the tech business and have a significant impact, I'm dedicated to lifelong learning and personal development. I also have
+                excellent problem-solving abilities and the capacity to collaborate well with others, which have equipped me for success in demanding
+                and dynamic work contexts.
+                </p>
+              <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                <p class="tab-links" onclick="opentab('education')">Education</p>
+              </div>
+              <div class="tab-contents active-tab" id="skills">
+                <!-- New Skill Design -->
+                <div class="skills-container">
+                  <div class="container">
+                    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v6/icons/html5.svg" alt="HTML5">
+                    <h2>HTML</h2>
+                  </div>
+                  <div class="container special">
+                    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v6/icons/amazon.svg" alt="AWS">
+                    <h2>AWS</h2>
+                  </div>
+                  <div class="container">
+                    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v6/icons/css3.svg" alt="CSS3">
+                    <h2>CSS</h2>
+                  </div>
+                  <div class="container">
+                    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v6/icons/react.svg" alt="React">
+                    <h2>React</h2>
+                  </div>
+                  <div class="container">
+                    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v6/icons/javascript.svg" alt="JavaScript">
+                    <h2>JS</h2>
+                  </div>
+                  <div class="container">
+                    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v6/icons/node.js.svg" alt="Node.js">
+                    <h2>Node.js</h2>
+                  </div>
+                  <div class="container">
+                    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v6/icons/python.svg" alt="Node.js">
+                    <h2>Python</h2>
+                  </div>
+                  <div class="container">
+                    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v6/icons/java.svg" alt="Node.js">
+                    <h2>Java</h2>
+                  </div>
+                </div>
+                <!-- End of New Skill Design -->
+              </div>
+              <div class="tab-contents" id="experience">
+                <ul>
+                  <li><span>Web Development</span><br>Personal Portfolio Website</li>
+                </ul>
+              </div>
+              <div class="tab-contents" id="education">
+                <ul>
+                  <li><span>HSC</span><br>Alchemy School</li>
+                  <li><span>SSC</span><br>Subhash Public School</li>
+                  <li><span>B.Tech</span><br>Parul University</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>      
+
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Design</h2>
+            <p>web Design</p>
+            <a href="#">Learn More</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-crop"></i>
+            <h2>Content Creator</h2>
+            <p>Content Creator</p>
+            <a href="#">Learn More</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-video"></i>
+            <h2>Video Editor</h2>
+            <p>Video Editor</p>
+            <a href="#">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work_list">
+          <div class="work">
+            <img src="images/space.webp">
+            <div class="layer">
+              <h3>Social Media App</h3>
+              <p>This app connects</p>
+              <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+      </div>
+    </div>
+
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-paper-plane"></i>sonuroy1818@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i>0123456789</p>
+            <div class="social-icons">
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              <a href="https://www.instagram.com/sonu_roy_18?igsh=ZDJwZ2t6azhsOHhi"><i
+                  class="fa-brands fa-instagram"></i></a>
+              <a href="https://twitter.com/SONURAI1818"><i class="fa-brands fa-twitter"></i></a>
+              <a href="http://www.linkedin.com/in/sonu-rai-a51619291"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <a href="images/Resumesonu.pdf" download class="btn btn2">Download CV</a>
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required>
+              <input type="email" name="email" placeholder="Your Email" required>
+              <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+              <button type="submit" class="btn btn2">submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>copyright © 2024 Sonu Rai |<i class="fa-solid fa-heart"></i> All Rights Reserved.</p>
+      </div>
+    </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+      
+        function opentab(tabname) {
+          for (tablink of tablinks) {
+            tablink.classList.remove("active-link");
+          }
+          for (tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab");
+          }
+          event.currentTarget.classList.add("active-link");
+          document.getElementById(tabname).classList.add("active-tab");
+        }
+      </script>
+      <script>
+        document.getElementById('menu-btn').addEventListener('click', function() {
+            var sidemenu = document.getElementById('sidemenu');
+            sidemenu.classList.toggle('show');
+        });
+    </script>
+    
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
+      function closemenu() {
+        sidemenu.style.right = "-200px";
+      }
+    </script>
+    
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbyFrX-TIcPm5iD5ZxkwgTZXiW3xDgNlubXP5BVBOE8UPss4VkPYvGfstEzuVprM-XqPMg/exec'
+      const form = document.forms['submit-to-google-sheet']
+      const msg = document.getElementById("msg")
+
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+          .then(response => {
+            msg.innerHTML = "Message sent Successfully"
+            setTimeout(function () {
+              msg.innerHTML = ""
+            }, 5000)
+            form.reset()
+          })
+          .catch(error => console.error('Error!', error.message))
+      })
+    </script>
+</body>
+
+</html>
